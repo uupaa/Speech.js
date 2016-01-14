@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><head><title>Speech test</title>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta charset="utf-8"></head><body>
+
+<script src="../../lib/WebModule.js"></script>
+<script>
+WebModule.verify  = __WEBMODULE_VERIFY__;
+WebModule.verbose = __WEBMODULE_VERBOSE__;
+WebModule.publish = __WEBMODULE_PUBLISH__;
+</script>
+
+__MODULES__
+__WMTOOLS__
+__SOURCES__
+__OUTPUT__
+__TEST_CASE__
+
+
+<input type="button" value="start recognition" onclick="_startRecognition()"></input>
+<input type="button" value="stop recognition" onclick="_stopRecognition()"></input>
+<input type="button" value="clear buffer" onclick="_clearBuffer()"></input>
+<br />
+
+<script src="../recognizer.js"></script>
+
+</body></html>
+

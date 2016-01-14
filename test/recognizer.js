@@ -1,22 +1,3 @@
-# Speech.js [![Build Status](https://travis-ci.org/uupaa/Speech.js.svg)](https://travis-ci.org/uupaa/Speech.js)
-
-[![npm](https://nodei.co/npm/uupaa.speech.js.svg?downloads=true&stars=true)](https://nodei.co/npm/uupaa.speech.js/)
-
-Speech Synthesis and Recognition.
-
-This module made of [WebModule](https://github.com/uupaa/WebModule).
-
-## Documentation
-- [Spec](https://github.com/uupaa/Speech.js/wiki/)
-- [API Spec](https://github.com/uupaa/Speech.js/wiki/Speech)
-
-## Browser, NW.js and Electron
-
-```js
-<script src="<module-dir>/lib/WebModule.js"></script>
-<script src="<module-dir>/lib/Speech.js"></script>
-<script>
-
 var speech = new Speech().load({ name: /Kyoko/i, lang: /ja/i });
 var recognizer = new Speech().createRecognizer();
 var voiceCommandMap = {
@@ -67,7 +48,4 @@ function _clearBuffer() {
     recognizer.clear();
     console.info("buffer cleared");
 }
-
-</script>
-```
 
